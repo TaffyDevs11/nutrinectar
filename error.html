@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Error - Demo Site</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #001f3f; /* Deep Blue */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #ffffff;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    img {
+      width: 200px;
+      animation: wave 3s ease-in-out infinite;
+    }
+
+    @keyframes wave {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(2deg); }
+      50% { transform: rotate(-2deg); }
+      75% { transform: rotate(2deg); }
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-top: 20px;
+    }
+
+    p {
+      max-width: 600px;
+      margin: 20px auto;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .home-btn {
+      margin-top: 20px;
+      padding: 12px 24px;
+      font-size: 1em;
+      background-color: #00bfff;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .home-btn:hover {
+      background-color: #ffffff;
+      color: #001f3f;
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0, 191, 255, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <img src="img/Untitled design.png" alt="TaffyDevs Logo" />
+
+  <h1>Nothing to see here</h1>
+  <p>This is a demo website created solely for presentation purposes. It is not intended for commercial use or public browsing. The page you’re viewing is a placeholder to assist in visual storytelling during a pitch or prototype. Please use the navigation below to return to the main site and continue your journey.</p>
+
+  <button class="home-btn" onclick="window.location.href='index.html'">Go Back Home</button>
+
+</body>
+</html>
